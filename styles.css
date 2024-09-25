@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background-color: #172446;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.heading {
+  height: 8rem;
+  width: 40rem;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding-top: 1.2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 7px 7px 1px white;
+}
+
+p {
+  color: white;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 18px;
+  font-family: sans-serif;
+  filter: drop-shadow(3px 3px 5px black);
+}
+
+.display-points {
+  display: flex;
+  gap: 1rem;
+}
+
+.reset{
+  height: 6rem;
+  width: 6rem;
+  font-weight: 600;
+  font-size: 2rem;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 1px white;
+  border: 3px solid black;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.computer-points,
+.player-points {
+  height: 6rem;
+  width: 6rem;
+  font-family: "Jacquarda Bastarda 9";
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding-left: 1.7rem;
+  padding-bottom: 1.1rem;
+  font-size: 5rem;
+  box-shadow: 5px 5px 1px white;
+  border: 3px solid black;
+  cursor: not-allowed;
+}
+
+.circle {
+  height: 9rem;
+  width: 9rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: rgb(175, 175, 0); */
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.circle:hover {
+  transform: scale(1.2);
+  rotate: 60deg;
+}
+
+.inner {
+  height: 7.5rem;
+  width: 7.5rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  background: #e7e7e7;
+  box-shadow: inset 5px 5px 5px #bec0d4;
+}
+
+.game-options {
+  display: flex;
+  height: 50%;
+}
+
+.rock {
+  background-color: #e03e5a;
+  position: relative;
+  top: 75%;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+}
+
+.paper {
+  background-color: #5772f5;
+  position: relative;
+  top: 25%;
+  bottom: 0;
+  left: -8%;
+  right: 0;
+}
+
+.scissor {
+  background-color: #eca824;
+  position: relative;
+  top: -10%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.lizard {
+  background-color: #8f5ce4;
+  position: relative;
+  top: 25%;
+  bottom: 0;
+  left: 9%;
+  right: 0;
+}
+.spock {
+  background-color: #55bdd1;
+  position: relative;
+  top: 75%;
+  bottom: 0;
+  left: -23%;
+  right: 0;
+}
+
+
+.r {
+  background-image: url("./assets/images/rock.png");
+  background-position: center;
+  background-size: 3.5rem;
+  background-repeat: no-repeat;
+}
+
+.p {
+  background-image: url(./assets/images/hand.png);
+  background-size: 4rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.s {
+  background-image: url(./assets/images/scissor.png);
+  background-size: 4rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  rotate: -90deg;
+}
+
+.l {
+  background-image: url(./assets/images/lizard.png);
+  background-size: 4rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  rotate: -50deg;
+}
+
+.sp {
+  background-image: url(./assets/images/spock.png);
+  background-size: 4rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rules-btn {
+  background-color: transparent;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid white;
+  box-shadow: 5px 5px 1px white;
+  transition: 0.4s ease;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 18px;
+  font-family: sans-serif;
+  /* filter: drop-shadow(3px 3px 5px black); */
+}
+
+.rules-btn:hover {
+  transform: scale(1.1);
+}
+
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.content {
+  background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+  color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  padding-left: 10rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-radius: 1rem;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.2);
+    rotate: 90deg;
+}

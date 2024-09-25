@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap"
+      rel="stylesheet"
+    />
+    <title>RPSLS Showdown</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="heading">
+        <div class="description">
+          <p>ROCK</p>
+          <p>PAPER</p>
+          <p>SCISSORS</p>
+          <p>LIZARD</p>
+          <p>SPOCK</p>
+        </div>
+        <div class="display-points">
+          <button class="reset">Reset</button>
+          <input type="text" class="computer-points" readonly />
+          <input class="player-points" readonly />
+        </div>
+      </section>
+      <section class="game-options">
+        <button class="circle rock" value="rock">
+          <div class="inner r"></div>
+        </button>
+        <button class="circle paper" value="paper">
+          <div class="inner p"></div>
+        </button>
+        <button class="circle scissor" value="scissor">
+          <div class="inner s"></div>
+        </button>
+        <button class="circle lizard" value="lizard">
+          <div class="inner l"></div>
+        </button>
+        <button class="circle spock" value="spock">
+          <div class="inner sp"></div>
+        </button>
+      </section>
+      <section>
+        <button class="rules-btn">RULES</button>
+        <p class="display-winner"></p>
+        <div class="modal">
+          <div class="content">
+            <span class="close">&times;</span>
+            <h2>Rules</h2>
+            <ul>
+              <li>Scissors cuts paper.</li>
+              <li>Paper covers rock.</li>
+              <li>Rock crushes lizard.</li>
+              <li>Lizard poisons Spock.</li>
+              <li>Spock smashes scissors.</li>
+              <li>Scissors decapitates lizard.</li>
+              <li>Lizard eats paper.</li>
+              <li>Paper disproves Spock.</li>
+              <li>Spock vaporizes rock.</li>
+              <li>Rock crushes scissors.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
