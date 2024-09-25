@@ -266,7 +266,7 @@ p {
   rotate: 90deg;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 720px) {
   .heading {
     display: flex;
     flex-direction: column;
