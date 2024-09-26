@@ -4,7 +4,6 @@ Overview:
 Rock, Paper, Scissors, Lizard, Spock is an extended version of the classic game that adds more complexity and options. This game introduces two additional moves—Lizard and Spock—allowing for a greater variety of outcomes and strategies.
 
 Rules:
-
 Rock crushes Scissors<br>
 Scissors cuts Paper<br>
 Paper covers Rock<br>
