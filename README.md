@@ -5,17 +5,16 @@ Rock, Paper, Scissors, Lizard, Spock is an extended version of the classic game 
 
 Rules:
 
-Rock crushes Scissors
-Scissors cuts Paper
-Paper covers Rock
-Rock crushes Lizard
-Lizard poisons Spock
-Spock smashes Scissors
-Scissors decapitates Lizard
-Lizard eats Paper
-Paper disproves Spock
-Spock vaporizes Rock
+Rock crushes Scissors<br>
+Scissors cuts Paper<br>
+Paper covers Rock<br>
+Rock crushes Lizard<br>
+Lizard poisons Spock<br>
+Spock smashes Scissors<br>
+Scissors decapitates Lizard<br>
+Lizard eats Paper<br>
+Paper disproves Spock<br>
+Spock vaporizes Rock<br><br>
 Gameplay:
-Players simultaneously choose one of the five options. The winner is determined by the interactions outlined above. In case of a tie, players can choose again.
-
+Players simultaneously choose one of the five options. The winner is determined by the interactions outlined above. In case of a tie, players can choose again.<br>
 This game is perfect for adding a fun twist to traditional gameplay and can be used in various contexts, from casual play to decision-making scenarios.
